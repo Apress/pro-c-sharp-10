@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfStyles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfStyles"
+        mc:Ignorable="d"
+        Title="A Window With Style" Height="450" Width="800">
+    <StackPanel>
+        <!--<Label x:Name="lblInfo" Content="This style is boring..."
+               Style="{StaticResource BasicControlStyle}" Width="150"/>
+        <Button x:Name="btnTestButton" Content="Yes, but we are reusing settings!"
+                Style="{StaticResource BasicControlStyle}" Width="250" Cursor="Help"/>
+        <Button x:Name="btnAnotherButton" Content="OK!" Margin="0,10,0,0"
+                Style="{StaticResource BigGreenButton}" Width="250" Cursor="Help"/>
+        <TextBox x:Name="txtTest"/>
+        <TextBox x:Name="txtTest2" Style="{x:Null}" BorderBrush="Black"
+                 BorderThickness="5" Height="60" Width="100" Text="Ha!"/>
+        <Button x:Name="btnTiltButton" Content="OK!" Margin="0,10,0,0"
+                Style="{StaticResource TiltButton}" Cursor="Help"/>-->
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,50">
+            <Label Content="Please Pick a Style for this Button" Height="50"/>
+            <ListBox x:Name ="lstStyles" Height ="80" Width ="150" Background="LightBlue"
+                     SelectionChanged ="comboStyles_Changed" />
+        </StackPanel>
+        <Button x:Name="btnStyle" Height="40" Width="100" Content="OK!"/>
+
+    </StackPanel>
+</Window>

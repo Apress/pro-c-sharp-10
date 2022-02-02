@@ -1,0 +1,43 @@
+﻿<Window x:Class="InteractiveLaserSign.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InteractiveLaserSign"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="650">
+    <Canvas MouseLeftButtonDown="Canvas_MouseLeftButtonDown">
+        <!-- Microsoft XPS Document Converter (MXDC) Generated! Version: 0.3.18362.836 -->
+        <Path Data="F1 M 0,0 C -13.92,0 -22.08,13.28 -27.2,24.48 -120,185.92 -214.08,346.72 -306.08,508.48
+		 -311.84,524.64 -295.52,542.88 -278.88,539.52 -89.28,539.2 100.48,540.16 289.92,539.04 306.56,535.84 314.72,512.96 303.36,500.16
+		 208.16,336 114.24,171.2 18.4,7.52 13.6,2.56 6.88,-0.32 0,0 z" RenderTransform="1,0,0,1,307.2,0" Fill="#ffffff00" />
+        <Path Data="F1 M 0,0 L -283.68,-491.52 C -286.56,-496.64 -292,-499.52 -297.6,-499.52 -303.36,-499.52 -308.64,-496.48 -311.52,-491.52
+		L -595.36,0 C -598.24,4.96 -598.24,11.2 -595.36,16 -592.48,20.96 -587.2,24 -581.44,24
+		L -13.76,24 C -8.16,24 -2.88,20.96 0,16 3.04,11.04 3.04,4.96 0,0 z" RenderTransform="1,0,0,1,605.6,507.52" Fill="#ff000000" />
+        <Path Data="F1 M 52,499.52 L 308,56.16 564,499.52 z"  Fill="#fff7f619" />
+        <Path Data="F1 M 302.72,239.68 L 311.68,239.68 311.68,465.44 302.72,465.44 z"  Fill="#ff000000" />
+        <Path Data="F1 M 302.72,239.68 L 311.68,239.68 311.68,465.44 302.72,465.44 z"  Stroke="#ff000000" StrokeThickness="0.8" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 283.84,282.24 L 292.32,280 330.72,422.88 322.08,425.12 z"  Fill="#ff000000" />
+        <Path Data="F1 M 283.84,282.24 L 292.32,280 330.72,422.88 322.08,425.12 z"  Stroke="#ff000000" StrokeThickness="0.8" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 246.88,256.96 L 254.56,252.48 367.52,448.16 359.84,452.64 z"  Fill="#ff000000" />
+        <Path Data="F1 M 246.88,256.96 L 254.56,252.48 367.52,448.16 359.84,452.64 z"  Stroke="#ff000000" StrokeThickness="0.64" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 251.84,303.36 L 258.08,297.12 362.72,401.76 356.32,408 z"  Fill="#ff000000" />
+        <Path Data="F1 M 251.84,303.36 L 258.08,297.12 362.72,401.76 356.32,408 z"  Stroke="#ff000000" StrokeThickness="0.48" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 207.2,300 L 211.68,292.16 407.2,405.12 402.72,412.96 z"  Fill="#ff000000" />
+        <Path Data="F1 M 207.2,300 L 211.68,292.16 407.2,405.12 402.72,412.96 z"  Stroke="#ff000000" StrokeThickness="0.369504" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 234.56,337.76 L 236.96,329.12 379.84,367.36 377.44,376 z"  Fill="#ff000000" />
+        <Path Data="F1 M 234.56,337.76 L 236.96,329.12 379.84,367.36 377.44,376 z"  Stroke="#ff000000" StrokeThickness="0.21436" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 194.24,356.96 L 194.24,348 496.48,348 496.48,356.96 z"  Fill="#ff000000" />
+        <Path Data="F1 M 194.24,356.96 L 194.24,348 496.48,348 496.48,356.96 z"  Stroke="#ff000000" StrokeThickness="0.8" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 236.96,376 L 234.56,367.36 377.44,329.12 379.84,337.76 z"  Fill="#ff000000" />
+        <Path Data="F1 M 236.96,376 L 234.56,367.36 377.44,329.12 379.84,337.76 z"  Stroke="#ff000000" StrokeThickness="0.214359" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 211.68,412.96 L 207.2,405.12 402.72,292.16 407.2,300 z"  Fill="#ff000000" />
+        <Path Data="F1 M 211.68,412.96 L 207.2,405.12 402.72,292.16 407.2,300 z"  Stroke="#ff000000" StrokeThickness="0.369504" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 258.08,408 L 251.84,401.76 356.32,297.12 362.72,303.36 z"  Fill="#ff000000" />
+        <Path Data="F1 M 258.08,408 L 251.84,401.76 356.32,297.12 362.72,303.36 z"  Stroke="#ff000000" StrokeThickness="0.48" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 254.56,452.64 L 246.88,448.16 359.84,252.48 367.52,256.96 z"  Fill="#ff000000" />
+        <Path Data="F1 M 254.56,452.64 L 246.88,448.16 359.84,252.48 367.52,256.96 z"  Stroke="#ff000000" StrokeThickness="0.64" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+        <Path Data="F1 M 292.32,425.12 L 283.84,422.88 322.08,280 330.72,282.24 z"  Fill="#ff000000" />
+        <Path Data="F1 M 292.32,425.12 L 283.84,422.88 322.08,280 330.72,282.24 z"  Stroke="#ff000000" StrokeThickness="0.8" StrokeLineJoin="Miter" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeMiterLimit="4" />
+    </Canvas>
+</Window>

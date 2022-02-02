@@ -1,0 +1,62 @@
+[
+  {
+    "CanFly": true,
+    "CanSubmerge": true,
+    "TheRadio": {
+      "StationPresets": [
+        "89.3",
+        "105.1",
+        "97.1"
+      ],
+      "HasTweeters": true,
+      "HasSubWoofers": false,
+      "RadioId": "XF-552RR6"
+    },
+    "IsHatchBack": false
+  },
+  {
+    "CanFly": true,
+    "CanSubmerge": false,
+    "TheRadio": {
+      "StationPresets": [
+        "89.3",
+        "105.1",
+        "97.1"
+      ],
+      "HasTweeters": true,
+      "HasSubWoofers": false,
+      "RadioId": "XF-552RR6"
+    },
+    "IsHatchBack": false
+  },
+  {
+    "CanFly": false,
+    "CanSubmerge": true,
+    "TheRadio": {
+      "StationPresets": [
+        "89.3",
+        "105.1",
+        "97.1"
+      ],
+      "HasTweeters": true,
+      "HasSubWoofers": false,
+      "RadioId": "XF-552RR6"
+    },
+    "IsHatchBack": false
+  },
+  {
+    "CanFly": false,
+    "CanSubmerge": false,
+    "TheRadio": {
+      "StationPresets": [
+        "89.3",
+        "105.1",
+        "97.1"
+      ],
+      "HasTweeters": true,
+      "HasSubWoofers": false,
+      "RadioId": "XF-552RR6"
+    },
+    "IsHatchBack": false
+  }
+]

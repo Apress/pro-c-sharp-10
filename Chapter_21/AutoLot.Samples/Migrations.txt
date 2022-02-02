@@ -1,0 +1,117 @@
+dotnet tool uninstall --global dotnet-ef
+dotnet tool install --global dotnet-ef --version 6.0.0
+dotnet tool install --global dotnet-ef --version 6.0.0-preview.7.21378.4
+
+dotnet ef database drop -f -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update 0
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Initial -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update Initial  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Radio -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update Radio  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Drivers -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update Drivers  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add StringAndTableConventionOverride -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update StringAndTableConventionOverride -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add DropTimeStampUpdateCar -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update DropTimeStampUpdateCar  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add ReAddTimestamp -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update ReAddTimestamp  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add UpdateRadio -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update UpdateRadio  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add DriverMake -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update DriverMake  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add FluentUpdates -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update FluentUpdates -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add FluentManyToMany -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update FluentManyToMany -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add FixTableSchemas -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update FixTableSchemas -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add PersonInfoOnDriver -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update PersonInfoOnDriver -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Customer -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update Customer  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add FixCustomer -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update FixCustomer  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add RemoveTimeStamp -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update RemoveTimeStamp  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add ReplaceTimeStamp -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update ReplaceTimeStamp  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Computed -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update Computed  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add One2ManyFluent -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update One2ManyFluent  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add One2OneFluent -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update One2OneFluent  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Many2ManyFluent -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update Many2ManyFluent  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Test -o Migrations -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations add OwnedCorrected -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update OwnedCorrected  -c AutoLot.Samples.ApplicationDbContext
+
+dotnet ef migrations add ManyToManyUpdated -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update ManyToManyUpdated  -c AutoLot.Samples.ApplicationDbContext
+

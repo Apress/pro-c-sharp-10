@@ -1,0 +1,17 @@
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Fun with Panels!" Height="100" Width="650"
+    >
+  <WrapPanel Background="LightSteelBlue" Orientation ="Horizontal" ItemWidth ="200" ItemHeight ="30">
+  <Label x:Name="lblInstruction" FontSize="15" Content="Enter Car Information"/>
+  <Label x:Name="lblMake" Content="Make"/>
+  <TextBox x:Name="txtMake"/>
+  <Label x:Name="lblColor" Content="Color"/>
+  <TextBox x:Name="txtColor"/>
+  <Label x:Name="lblPetName" Content="Pet Name"/>
+  <TextBox x:Name="txtPetName"/>
+  <Button x:Name="btnOK" Width ="80" Content="OK"/>
+</WrapPanel>
+
+</Page>

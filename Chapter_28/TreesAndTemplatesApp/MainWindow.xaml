@@ -1,0 +1,38 @@
+﻿<Window x:Class="TreesAndTemplatesApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TreesAndTemplatesApp"
+        mc:Ignorable="d"
+        Title="Fun with Trees and Templates" Height="450" Width="800">
+    <DockPanel LastChildFill="True">
+        <Border Height="50" DockPanel.Dock="Top" BorderBrush="Blue">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnShowLogicalTree" Content="Logical Tree of Window"
+                        Margin="4" BorderBrush="Blue" Height="40" Click="btnShowLogicalTree_Click"/>
+                <Button x:Name="btnShowVisualTree" Content="Visual Tree of Window"
+                        BorderBrush="Blue" Height="40" Click="btnShowVisualTree_Click"/>
+            </StackPanel>
+        </Border>
+        <Border DockPanel.Dock="Left" Margin="10" BorderBrush="DarkGreen"
+                BorderThickness="4" Width="358">
+            <StackPanel>
+                <Label Content="Enter Full Name of WPF Control" Width="340" FontWeight="DemiBold" />
+                <TextBox x:Name="txtFullName" Width="340" BorderBrush="Green"
+                         Background="BlanchedAlmond" Height="22"
+                         Text="System.Windows.Controls.Button" />
+                <Button x:Name="btnTemplate" Content="See Template" BorderBrush="Green"
+                        Height="40" Width="100" Margin="5"
+                        Click="btnTemplate_Click" HorizontalAlignment="Left" />
+                <Border BorderBrush="DarkGreen" BorderThickness="2" Height="260"
+                        Width="301" Margin="10" Background="LightGreen" >
+                    <StackPanel x:Name="stackTemplatePanel" />
+                </Border>
+            </StackPanel>
+        </Border>
+
+        <TextBox x:Name="txtDisplayArea" Margin="10" Background="AliceBlue" IsReadOnly="True"
+                 BorderBrush="Red" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
+    </DockPanel>
+</Window>

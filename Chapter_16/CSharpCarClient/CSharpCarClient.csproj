@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="CarLibrary" Version="1.0.4" />
+    </ItemGroup>
+
+    <!--<ItemGroup>
+    <ProjectReference Include="..\CarLibrary\CarLibrary.csproj" />
+  </ItemGroup>-->
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <PublishTrimmed>true</PublishTrimmed>
+        <DebugType>embedded</DebugType>
+        <EnableCompressionInSinglefile>true</EnableCompressionInSinglefile>
+        <PublishReadyToRun>true</PublishReadyToRun>
+    </PropertyGroup>
+
+</Project>

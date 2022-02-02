@@ -1,0 +1,26 @@
+ <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+   Height="100" Width="300" 
+   WindowStartupLocation="CenterScreen" Title="Animate String Data!">
+   <StackPanel>
+     <Button Name="myButton" Height="40"
+             FontSize="16pt" FontFamily="Verdana" Width = "100">
+      <Button.Triggers>
+        <EventTrigger RoutedEvent="Button.Loaded">
+          <BeginStoryboard>
+            <Storyboard>
+              <StringAnimationUsingKeyFrames RepeatBehavior = "Forever"
+                Storyboard.TargetName="myButton" Storyboard.TargetProperty="Content"
+                Duration="0:0:3">
+                <DiscreteStringKeyFrame Value="" KeyTime="0:0:0" />
+                <DiscreteStringKeyFrame Value="O" KeyTime="0:0:1" />
+                <DiscreteStringKeyFrame Value="OK" KeyTime="0:0:1.5" />
+                <DiscreteStringKeyFrame Value="OK!" KeyTime="0:0:2" />
+              </StringAnimationUsingKeyFrames>
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>
+      </Button.Triggers>
+    </Button>
+  </StackPanel>
+</Window>

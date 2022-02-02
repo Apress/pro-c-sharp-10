@@ -1,0 +1,22 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="FunWithPanels" Height="100" Width="250">
+  <Grid Background ="AliceBlue">
+    <!-- Define columns -->
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width ="Auto"/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+		
+    <!-- Add this label to cell 0 -->
+    <Label Name="lblLeft" Background ="GreenYellow" 
+                 Grid.Column="0" Content ="Left!"/>
+
+    <!-- Define the splitter -->
+    <GridSplitter Grid.Column ="0" Width ="5"/>
+
+    <!-- Add this label to cell 1 -->
+    <Label Name="lblRight" Grid.Column ="1" Content ="Right!"/>
+  </Grid>
+</Page>

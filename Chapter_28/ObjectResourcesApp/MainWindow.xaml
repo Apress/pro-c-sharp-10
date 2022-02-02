@@ -1,0 +1,22 @@
+﻿<Window x:Class="ObjectResourcesApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObjectResourcesApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Window.Resources>
+        <RadialGradientBrush x:Key="myBrush">
+            <GradientStop Color="#FFC44EC4" Offset="0"/>
+            <GradientStop Color="#FF829CEB" Offset="1"/>
+            <GradientStop Color="#FF793879" Offset="0.669"/>
+        </RadialGradientBrush>
+    </Window.Resources>-->
+    <StackPanel Orientation="Horizontal">
+        <Button Name="Ok" Margin="25" Height="200" Width="200" Content="OK"
+                FontSize="20" Background="{StaticResource myBrush}" Click="Ok_OnClick"/>
+        <Button Name="Cancel" Margin="25" Height="200" Width="200" Content="Cancel"
+                FontSize="20" Background="{DynamicResource myBrush}" Click="Cancel_OnClick"/>
+    </StackPanel>
+</Window>

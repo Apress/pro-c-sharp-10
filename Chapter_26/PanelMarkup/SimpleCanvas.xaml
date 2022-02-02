@@ -1,0 +1,23 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Fun with Panels!" Height="285" Width="325">
+  <Canvas Background="LightSteelBlue">
+    <Button x:Name="btnOK" Canvas.Left="212" Canvas.Top="203" 
+            Width="80" Content="OK"/>
+    <Label x:Name="lblInstructions" Canvas.Left="17" Canvas.Top="14" 
+           Width="328" Height="27" FontSize="15" 
+           Content="Enter Car Information"/>
+    <Label x:Name="lblMake" Canvas.Left="17" Canvas.Top="60" 
+           Content="Make"/>
+    <TextBox x:Name="txtMake" Canvas.Left="94" Canvas.Top="60" 
+             Width="193" Height="25"/>
+    <Label x:Name="lblColor" Canvas.Left="17" Canvas.Top="109" Content="Color"/>
+    <TextBox x:Name="txtColor" Canvas.Left="94" Canvas.Top="107" 
+             Width="193" Height="25"/>
+    <Label x:Name="lblPetName" Canvas.Left="17" Canvas.Top="155" 
+           Content="Pet Name"/>
+    <TextBox x:Name="txtPetName" Canvas.Left="94" Canvas.Top="153" 
+             Width="193" Height="25"/>
+  </Canvas>
+</Page>

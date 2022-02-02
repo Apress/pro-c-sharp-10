@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.IL">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <MicrosoftNetCoreIlasmVersion>6.0.0-rc.1.21451.13</MicrosoftNetCoreIlasmVersion>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+dotnet tool uninstall --global dotnet-ef
+dotnet tool install --global dotnet-ef --version 6.0.0
+dotnet tool install --global dotnet-ef --version 6.0.0-preview.7.21378.4
+
+dotnet ef database drop -f -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update 0
+
+dotnet ef migrations remove
+
+dotnet ef migrations add Price -o Migrations -c AutoLot.Samples.ApplicationDbContext
+dotnet ef database update Price  -c AutoLot.Samples.ApplicationDbContext
+
+

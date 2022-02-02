@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 11.0, SVG Export Plug-In . SVG Version: 6.0.0 Build 78)  -->
+<!-- Created by Cary Bass http://commons.wikipedia.com/wiki/User:Bastique on January 20, 2006 -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="615.89575"
+   height="540.0105"
+   id="radioactive"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   sodipodi:docname="WarnungVorEinerGefahrenstelle_D-W000.svg"
+   sodipodi:docbase="/export/transfer">
+  <defs
+     id="defs58" />
+  <sodipodi:namedview
+     inkscape:window-height="966"
+     inkscape:window-width="1272"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="1.0955294"
+     inkscape:cx="307.94787"
+     inkscape:cy="350.51547"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:current-layer="radioactive"
+     inkscape:document-units="mm"
+     gridspacingx="0.25mm"
+     gridspacingy="0.25mm"
+     grid_units="mm"
+     width="169.33334mm"
+     height="148.16667mm"
+     units="mm" />
+  <metadata
+     id="metadata60">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 24.689244,-160.5126 C 24.757113,-160.5635 24.689244,-160.34292 24.689244,-160.5126 z "
+     id="path1965" />
+  <g
+     id="g1891"
+     transform="translate(8.146196,8.022892)">
+    <path
+       id="path1877"
+       d="M 299.09375,-8 C 285.2752,-7.992418 276.97358,5.3760798 271.875,16.53125 C 179.06241,177.95887 85.093615,338.77609 -7,500.5625 C -12.655568,516.74325 3.5954928,534.90536 20.3125,531.59287 C 209.912,531.32032 399.54938,532.21713 589.125,531.09375 C 605.71557,527.93 613.80037,504.94424 602.49938,492.16558 C 507.36358,328.05043 413.40661,163.19507 317.5,-0.4375 C 312.77524,-5.3226321 305.97101,-8.3168021 299.09375,-8 z "
+       style="fill:yellow" />
+    <g
+       id="g4">
+      <path
+         id="sign_border"
+         d="M 597.6,499.6 L 313.8,8 C 310.9,3 305.6,0 299.9,0 C 294.2,0 288.9,3.1 286,8 L 2.2,499.6 C -0.7,504.6 -0.7,510.7 2.2,515.6 C 5.1,520.6 10.4,523.6 16.1,523.6 L 583.7,523.6 C 589.4,523.6 594.7,520.5 597.6,515.6 C 600.5,510.6 600.5,504.5 597.6,499.6 z " />
+      <polygon
+         points="43.9,491.5 299.9,48.2 555.9,491.5 43.9,491.5 "
+         id="sign_bg"
+         style="fill:#f7f619" />
+    </g>
+    <g
+       transform="matrix(1.052559,0,0,1.052559,742.3144,-4.92249)"
+       id="g2892">
+      <path
+         sodipodi:type="arc"
+         style="fill:black;fill-opacity:1;stroke:black;stroke-width:0.62514842;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.4"
+         id="path1995"
+         sodipodi:cx="-422.16095"
+         sodipodi:cy="417.52725"
+         sodipodi:rx="38.151581"
+         sodipodi:ry="36.156727"
+         d="M -384.00937 417.52725 A 38.151581 36.156727 0 1 1  -460.31253,417.52725 A 38.151581 36.156727 0 1 1  -384.00937 417.52725 z"
+         transform="matrix(0.943604,0,0,0.995665,-21.96988,1.966567)" />
+      <path
+         style="fill:black;fill-opacity:1;stroke:black;stroke-width:0.84159344;stroke-linecap:square;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+         d="M -420.32264,164.9375 C -439.93907,164.9375 -455.72889,181.06289 -455.72889,201.09375 L -445.26014,327.75 C -443.26074,344.13347 -441.55314,353.41593 -434.79139,357.78125 C -430.37632,359.79273 -425.4858,360.9375 -420.32264,360.9375 C -415.18438,360.9375 -410.31481,359.80569 -405.91639,357.8125 C -399.1168,353.45951 -397.38902,344.17012 -395.38514,327.75 L -384.91639,201.09375 C -384.91639,181.06289 -400.70622,164.9375 -420.32264,164.9375 z "
+         id="rect1997" />
+    </g>
+  </g>
+</svg>

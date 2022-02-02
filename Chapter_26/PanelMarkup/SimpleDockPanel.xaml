@@ -1,0 +1,16 @@
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Fun with Panels!" Height="186" Width="300">
+
+  <DockPanel LastChildFill ="True" Background="AliceBlue">
+    <!-- Dock items to the panel -->
+    <Label DockPanel.Dock ="Top" Name="lblInstruction"
+           FontSize="15" Content="Enter Car Information"/>
+    <Label DockPanel.Dock ="Left" Name="lblMake" Content="Make"/>
+    <Label DockPanel.Dock ="Right" Name="lblColor" Content="Color"/>
+    <Label DockPanel.Dock ="Bottom" Name="lblPetName" Content="Pet Name"/>
+    <Button Name="btnOK" Content="OK"/>
+  </DockPanel>
+
+</Page>

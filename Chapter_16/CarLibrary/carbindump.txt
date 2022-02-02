@@ -1,0 +1,128 @@
+Microsoft (R) COFF/PE Dumper Version 14.12.25835.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file .\bin\debug\net6.0\CarLibrary.dll
+
+PE signature found
+
+File Type: DLL
+
+FILE HEADER VALUES
+             14C machine (x86)
+               3 number of sections
+        877429B3 time date stamp
+               0 file pointer to symbol table
+               0 number of symbols
+              E0 size of optional header
+            2022 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+                   DLL
+
+OPTIONAL HEADER VALUES
+             10B magic # (PE32)
+           48.00 linker version
+             E00 size of code
+             600 size of initialized data
+               0 size of uninitialized data
+            2DE6 entry point (10002DE6)
+            2000 base of code
+            4000 base of data
+        10000000 image base (10000000 to 10007FFF)
+            2000 section alignment
+             200 file alignment
+            4.00 operating system version
+            0.00 image version
+            4.00 subsystem version
+               0 Win32 version
+            8000 size of image
+             200 size of headers
+               0 checksum
+               3 subsystem (Windows CUI)
+            8560 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   No structured exception handler
+                   Terminal Server Aware
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+               0 [       0] RVA [size] of Export Directory
+            2D94 [      4F] RVA [size] of Import Directory
+            4000 [     3AC] RVA [size] of Resource Directory
+               0 [       0] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+            6000 [       C] RVA [size] of Base Relocation Directory
+            2CA4 [      54] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+               0 [       0] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+            2000 [       8] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+            2008 [      48] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+     DEC virtual size
+    2000 virtual address (10002000 to 10002DEB)
+     E00 size of raw data
+     200 file pointer to raw data (00000200 to 00000FFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    C0067904 cv            75 00002CF8      EF8    Format: RSDS, {937F0BEC-FCEB-433F-956F-01E3FC1342C9}, 1, D:\Projects\Books\csharp10-wf\Code\New\Chapter_16\CarLibrary\obj\Debug\net6.0\CarLibrary.pdb
+    00000000 (  13)        27 00002D6D      F6D
+    00000000 repro          0 00000000        0
+
+SECTION HEADER #2
+   .rsrc name
+     3AC virtual size
+    4000 virtual address (10004000 to 100043AB)
+     400 size of raw data
+    1000 file pointer to raw data (00001000 to 000013FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #3
+  .reloc name
+       C virtual size
+    6000 virtual address (10006000 to 1000600B)
+     200 size of raw data
+    1400 file pointer to raw data (00001400 to 000015FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        2000 .reloc
+        2000 .rsrc
+        2000 .text

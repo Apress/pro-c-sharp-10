@@ -1,0 +1,24 @@
+﻿<Window x:Class="BinaryResourceApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BinaryResourceApp"
+        mc:Ignorable="d"
+        Title="Fun with Binary Resources" Height="450" Width="800"
+        Loaded="MainWindow_OnLoaded">
+    <DockPanel LastChildFill="True">
+        <ToolBar Height="60" Name="picturePickerToolbar" DockPanel.Dock="Top">
+            <Button x:Name="btnPreviousImage" Height="40" Width="100" BorderBrush="Black"
+                    Margin="5" Content="Previous" Click="btnPreviousImage_Click"/>
+            <Button x:Name="btnNextImage" Height="40" Width="100" BorderBrush="Black"
+                    Margin="5" Content="Next" Click="btnNextImage_Click"/>
+        </ToolBar>
+
+        <!-- We will fill this Image in code. -->
+        <Border BorderThickness="2" BorderBrush="Green">
+            <Image x:Name="imageHolder" Stretch="Fill" />
+        </Border>
+
+    </DockPanel>
+</Window>

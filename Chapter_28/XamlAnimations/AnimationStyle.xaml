@@ -1,0 +1,39 @@
+<Window 
+  xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+  Title = "Animations as Resources" 
+  Height = "300" Width = "361" >
+
+  <!-- Put the animation style into the resource dictionary. -->
+  <Window.Resources>
+    <Style x:Key = "IncreaseHeightAnimationStyle">
+      <Style.Triggers>
+        <EventTrigger RoutedEvent = "Control.Loaded">
+          <EventTrigger.Actions>
+            <BeginStoryboard>
+              <Storyboard TargetProperty  =  "Height">
+                <DoubleAnimation From = "40" To = "200" 
+                    Duration = "0:0:4" RepeatBehavior = "Forever"/>
+              </Storyboard>
+            </BeginStoryboard>
+          </EventTrigger.Actions>
+        </EventTrigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Resources>
+  
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width = "164*" />
+      <ColumnDefinition Width = "175*" />
+    </Grid.ColumnDefinitions>
+    
+    <Label Content = "I'm moving!" Grid.Column = "0" 
+           Style = "{StaticResource IncreaseHeightAnimationStyle}"
+           Height = "30" Width = "100"/>
+    
+    <Ellipse Fill = "Blue"  Grid.Column = "1" 
+           Style = "{StaticResource IncreaseHeightAnimationStyle}"
+           Height = "30" Width = "100"/>
+  </Grid>
+</Window>

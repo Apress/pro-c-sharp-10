@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <Authors>Phil Japikse</Authors>
+        <Company>Apress</Company>
+        <Product>Pro C# 10.0</Product>
+        <PackageId>CarLibrary</PackageId>
+        <Description>This is an awesome library for cars.</Description>
+        <AssemblyVersion>1.0.0.1</AssemblyVersion>
+        <FileVersion>1.0.0.2</FileVersion>
+        <Version>1.0.4</Version>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <!-- <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0-rc.2.21480.5" />
+  </ItemGroup> -->
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>CSharpCarClient</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+</Project>

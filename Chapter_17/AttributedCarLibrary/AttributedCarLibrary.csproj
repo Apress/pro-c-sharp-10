@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <Authors>Philip Japikse</Authors>
+        <Company>Apress</Company>
+        <Description>This is a simple car library with attributes</Description>
+    </PropertyGroup>
+</Project>

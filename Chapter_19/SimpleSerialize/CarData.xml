@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<JamesBondCar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CanFly="true" CanSubmerge="false" xmlns="http://www.MyCompany.com">
+  <TheRadio>
+    <HasTweeters>true</HasTweeters>
+    <HasSubWoofers>false</HasSubWoofers>
+    <RadioId>XF-552RR6</RadioId>
+    <StationPresets>
+      <double>89.3</double>
+      <double>105.1</double>
+      <double>97.1</double>
+    </StationPresets>
+  </TheRadio>
+  <IsHatchBack>false</IsHatchBack>
+</JamesBondCar>

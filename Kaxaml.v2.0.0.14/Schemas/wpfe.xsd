@@ -1,0 +1,2118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/client/2007"
+           elementFormDefault="qualified"
+           xmlns="http://schemas.microsoft.com/client/2007"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <xs:import namespace="http://schemas.microsoft.com/winfx/2006/xaml" schemaLocation="xaml2006.xsd" />
+  <xs:element name="TransformGroup" type="dTransformGroup"/>
+  <xs:element name="RotateTransform" type="dRotateTransform"/>
+  <xs:element name="ScaleTransform" type="dScaleTransform"/>
+  <xs:element name="SkewTransform" type="dSkewTransform"/>
+  <xs:element name="TranslateTransform" type="dTranslateTransform"/>
+  <xs:element name="LineSegment" type="dLineSegment"/>
+  <xs:element name="BezierSegment" type="dBezierSegment"/>
+  <xs:element name="QuadraticBezierSegment" type="dQuadraticBezierSegment"/>
+  <xs:element name="ArcSegment" type="dArcSegment"/>
+  <xs:element name="PolyLineSegment" type="dPolyLineSegment"/>
+  <xs:element name="PolyBezierSegment" type="dPolyBezierSegment"/>
+  <xs:element name="PolyQuadraticBezierSegment" type="dPolyQuadraticBezierSegment"/>
+  <xs:element name="PathFigure" type="dPathFigure"/>
+  <xs:element name="PathGeometry" type="dPathGeometry"/>
+  <xs:element name="GeometryGroup" type="dGeometryGroup"/>
+  <xs:element name="SolidColorBrush" type="dSolidColorBrush"/>
+  <xs:element name="GradientStop" type="dGradientStop"/>
+  <xs:element name="LinearGradientBrush" type="dLinearGradientBrush"/>
+  <xs:element name="RadialGradientBrush" type="dRadialGradientBrush"/>
+  <xs:element name="Canvas" type="dCanvas"/>
+  <xs:element name="TimelineCollection" type="dTimelineCollection"/>
+  <xs:element name="Path" type="dPath"/>
+  <xs:element name="BeginStoryboard" type="dBeginStoryboard"/>
+  <xs:element name="Storyboard" type="dStoryboard"/>
+  <xs:element name="DoubleAnimation" type="dDoubleAnimation"/>
+  <xs:element name="EventTrigger" type="dEventTrigger"/>
+  <xs:element name="TriggerCollection" type="dTriggerCollection"/>
+  <xs:element name="TransformCollection" type="dTransformCollection"/>
+  <xs:element name="PathSegmentCollection" type="dPathSegmentCollection"/>
+  <xs:element name="PathFigureCollection" type="dPathFigureCollection"/>
+  <xs:element name="GeometryCollection" type="dGeometryCollection"/>
+  <xs:element name="GradientStopCollection" type="dGradientStopCollection"/>
+  <xs:element name="TriggerActionCollection" type="dTriggerActionCollection"/>
+  <xs:element name="ColorAnimation" type="dColorAnimation"/>
+  <xs:element name="Glyphs" type="dGlyphs"/>
+  <xs:element name="KeyTime" type="dKeyTime"/>
+  <xs:element name="KeySpline" type="dKeySpline"/>
+  <xs:element name="KeyFrameCollection" type="dKeyFrameCollection"/>
+  <xs:element name="DoubleAnimationUsingKeyFrames" type="dDoubleAnimationUsingKeyFrames"/>
+  <xs:element name="DiscreteDoubleKeyFrame" type="dDiscreteDoubleKeyFrame"/>
+  <xs:element name="LinearDoubleKeyFrame" type="dLinearDoubleKeyFrame"/>
+  <xs:element name="SplineDoubleKeyFrame" type="dSplineDoubleKeyFrame"/>
+  <xs:element name="ColorAnimationUsingKeyFrames" type="dColorAnimationUsingKeyFrames"/>
+  <xs:element name="DiscreteColorKeyFrame" type="dDiscreteColorKeyFrame"/>
+  <xs:element name="LinearColorKeyFrame" type="dLinearColorKeyFrame"/>
+  <xs:element name="SplineColorKeyFrame" type="dSplineColorKeyFrame"/>
+  <xs:element name="PointAnimationUsingKeyFrames" type="dPointAnimationUsingKeyFrames"/>
+  <xs:element name="DiscretePointKeyFrame" type="dDiscretePointKeyFrame"/>
+  <xs:element name="LinearPointKeyFrame" type="dLinearPointKeyFrame"/>
+  <xs:element name="SplinePointKeyFrame" type="dSplinePointKeyFrame"/>
+  <xs:element name="PointAnimation" type="dPointAnimation"/>
+  <xs:element name="Ellipse" type="dEllipse"/>
+  <xs:element name="Line" type="dLine"/>
+  <xs:element name="Polygon" type="dPolygon"/>
+  <xs:element name="Polyline" type="dPolyline"/>
+  <xs:element name="Rectangle" type="dRectangle"/>
+  <xs:element name="EllipseGeometry" type="dEllipseGeometry"/>
+  <xs:element name="RectangleGeometry" type="dRectangleGeometry"/>
+  <xs:element name="LineGeometry" type="dLineGeometry"/>
+  <xs:element name="Matrix" type="dMatrix"/>
+  <xs:element name="MatrixTransform" type="dMatrixTransform"/>
+  <xs:element name="ImageBrush" type="dImageBrush"/>
+  <xs:element name="MouseEventArgs" type="dMouseEventArgs"/>
+  <xs:element name="TextBlock" type="dTextBlock"/>
+  <xs:element name="Run" type="dRun"/>
+  <xs:element name="LineBreak" type="dLineBreak"/>
+  <xs:element name="FontFamily" type="dFontFamily"/>
+  <xs:element name="MediaElement" type="dMediaElement"/>
+  <xs:element name="Image" type="dImage"/>
+  <xs:element name="EventArgs" type="dEventArgs"/>
+  <xs:element name="VisualCollection" type="dVisualCollection"/>
+  <xs:element name="Inlines" type="dInlines"/>
+  <xs:element name="KeyboardEventArgs" type="dKeyboardEventArgs"/>
+  <xs:element name="Downloader" type="dDownloader"/>
+  <xs:element name="VideoBrush" type="dVideoBrush"/>
+  <xs:element name="InkPresenter" type="dInkPresenter"/>
+  <xs:element name="Stroke" type="dStroke"/>
+  <xs:element name="StrokeCollection" type="dStrokeCollection"/>
+  <xs:element name="StylusPoint" type="dStylusPoint"/>
+  <xs:element name="StylusPointCollection" type="dStylusPointCollection"/>
+  <xs:element name="StylusInfo" type="dStylusInfo"/>
+  <xs:element name="DrawingAttributes" type="dDrawingAttributes"/>
+  <xs:element name="ErrorEventArgs" type="dErrorEventArgs"/>
+  <xs:element name="ParserErrorEventArgs" type="dParserErrorEventArgs"/>
+  <xs:element name="RuntimeErrorEventArgs" type="dRuntimeErrorEventArgs"/>
+  <xs:element name="TimelineMarker" type="dTimelineMarker"/>
+  <xs:element name="TimelineMarkerCollection" type="dTimelineMarkerCollection"/>
+  <xs:element name="TimelineMarkerEventArgs" type="dTimelineMarkerEventArgs"/>
+  <xs:element name="ResourceCollection" type="dResourceCollection"/>
+  <xs:complexType name="dTransformGroup">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peTransformGroup" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gTransform" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Children" type="StringToTransformCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dRotateTransform">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="CenterX" type="StringToDoubleConverter"/>
+    <xs:attribute name="CenterY" type="StringToDoubleConverter"/>
+    <xs:attribute name="Angle" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dScaleTransform">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="CenterX" type="StringToDoubleConverter"/>
+    <xs:attribute name="CenterY" type="StringToDoubleConverter"/>
+    <xs:attribute name="ScaleX" type="StringToDoubleConverter"/>
+    <xs:attribute name="ScaleY" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dSkewTransform">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="CenterX" type="StringToDoubleConverter"/>
+    <xs:attribute name="CenterY" type="StringToDoubleConverter"/>
+    <xs:attribute name="AngleX" type="StringToDoubleConverter"/>
+    <xs:attribute name="AngleY" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTranslateTransform">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="X" type="StringToDoubleConverter"/>
+    <xs:attribute name="Y" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLineSegment">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Point" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dBezierSegment">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Point1" type="StringToPointConverter"/>
+    <xs:attribute name="Point2" type="StringToPointConverter"/>
+    <xs:attribute name="Point3" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dQuadraticBezierSegment">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Point1" type="StringToPointConverter"/>
+    <xs:attribute name="Point2" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dArcSegment">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Point" type="StringToPointConverter"/>
+    <xs:attribute name="Size" type="StringToPointConverter"/>
+    <xs:attribute name="RotationAngle" type="StringToDoubleConverter"/>
+    <xs:attribute name="IsLargeArc" type="StringToBooleanConverter"/>
+    <xs:attribute name="SweepDirection" type="StringToSweepDirectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPolyLineSegment">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Points" type="StringToPointsConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPolyBezierSegment">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Points" type="StringToPointsConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPolyQuadraticBezierSegment">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Points" type="StringToPointsConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPathFigure">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="pePathFigure" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gPathSegment" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Segments" type="StringToPathSegmentCollectionConverter"/>
+    <xs:attribute name="StartPoint" type="StringToPointConverter"/>
+    <xs:attribute name="IsClosed" type="StringToBooleanConverter"/>
+    <xs:attribute name="IsFilled" type="StringToBooleanConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPathGeometry">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="pePathGeometry" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gPathFigure" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="FillRule" type="StringToFillRuleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="Figures" type="StringToPathFigureCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dGeometryGroup">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peGeometryGroup" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gGeometry" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="FillRule" type="StringToFillRuleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="Children" type="StringToGeometryCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dSolidColorBrush">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="SolidColorBrush.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="SolidColorBrush.RelativeTransform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="RelativeTransform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="Color" type="StringToColorConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dGradientStop">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Color" type="StringToColorConverter"/>
+    <xs:attribute name="Offset" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLinearGradientBrush">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peLinearGradientBrush" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gGradientStop" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="RelativeTransform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="SpreadMethod" type="StringToGradientSpreadMethodConverter"/>
+    <xs:attribute name="MappingMode" type="StringToBrushMappingModeConverter"/>
+    <xs:attribute name="ColorInterpolationMode" type="StringToColorInterpolationModeConverter"/>
+    <xs:attribute name="GradientStops" type="StringToGradientStopCollectionConverter"/>
+    <xs:attribute name="StartPoint" type="StringToPointConverter"/>
+    <xs:attribute name="EndPoint" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dRadialGradientBrush">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peRadialGradientBrush" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gGradientStop" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="RelativeTransform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="SpreadMethod" type="StringToGradientSpreadMethodConverter"/>
+    <xs:attribute name="MappingMode" type="StringToBrushMappingModeConverter"/>
+    <xs:attribute name="ColorInterpolationMode" type="StringToColorInterpolationModeConverter"/>
+    <xs:attribute name="GradientStops" type="StringToGradientStopCollectionConverter"/>
+    <xs:attribute name="Center" type="StringToPointConverter"/>
+    <xs:attribute name="GradientOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="RadiusX" type="StringToDoubleConverter"/>
+    <xs:attribute name="RadiusY" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dCanvas">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:element ref="x:Code" minOccurs="0" maxOccurs="unbounded" />
+      <xs:group ref="peCanvas" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gUIElement" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="Children" type="StringToVisualCollectionConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Background" type="StringToBrushConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTimelineCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPath">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Path.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Path.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Path.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Path.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Path.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Path.Fill" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Path.Stroke" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Path.Data" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Fill" type="StringToBrushConverter"/>
+    <xs:attribute name="Stroke" type="StringToBrushConverter"/>
+    <xs:attribute name="StrokeMiterLimit" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeThickness" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeStartLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeEndLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeLineJoin" type="StringToPenLineJoinConverter"/>
+    <xs:attribute name="StrokeDashOffset" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeDashCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeDashArray" type="StringToDoublesConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="Data" type="StringToGeometryConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dBeginStoryboard">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peBeginStoryboard" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element ref="Storyboard" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Storyboard" type="StringToStoryboardConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dStoryboard">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peStoryboard" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gTimeline" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="AutoReverse" type="StringToBooleanConverter"/>
+    <xs:attribute name="BeginTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Duration" type="StringToDurationConverter"/>
+    <xs:attribute name="SpeedRatio" type="StringToDoubleConverter"/>
+    <xs:attribute name="FillBehavior" type="StringToFillBehaviorConverter"/>
+    <xs:attribute name="RepeatBehavior" type="StringToRepeatBehaviorConverter"/>
+    <xs:attribute name="Storyboard.TargetProperty" type="StringToStringConverter"/>
+    <xs:attribute name="Storyboard.TargetName" type="StringToStringConverter"/>
+    <xs:attribute name="Children" type="StringToTimelineCollectionConverter"/>
+    <xs:attribute name="Completed" type="StringToStringConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dDoubleAnimation">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="AutoReverse" type="StringToBooleanConverter"/>
+    <xs:attribute name="BeginTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Duration" type="StringToDurationConverter"/>
+    <xs:attribute name="SpeedRatio" type="StringToDoubleConverter"/>
+    <xs:attribute name="FillBehavior" type="StringToFillBehaviorConverter"/>
+    <xs:attribute name="RepeatBehavior" type="StringToRepeatBehaviorConverter"/>
+    <xs:attribute name="Storyboard.TargetProperty" type="StringToStringConverter"/>
+    <xs:attribute name="Storyboard.TargetName" type="StringToStringConverter"/>
+    <xs:attribute name="From" type="StringToDoubleConverter"/>
+    <xs:attribute name="To" type="StringToDoubleConverter"/>
+    <xs:attribute name="By" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dEventTrigger">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peEventTrigger" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gBeginStoryboard" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="RoutedEvent" type="StringToStringConverter"/>
+    <xs:attribute name="Actions" type="StringToTriggerActionCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTriggerCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTransformCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPathSegmentCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPathFigureCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dGeometryCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dGradientStopCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTriggerActionCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dColorAnimation">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="AutoReverse" type="StringToBooleanConverter"/>
+    <xs:attribute name="BeginTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Duration" type="StringToDurationConverter"/>
+    <xs:attribute name="SpeedRatio" type="StringToDoubleConverter"/>
+    <xs:attribute name="FillBehavior" type="StringToFillBehaviorConverter"/>
+    <xs:attribute name="RepeatBehavior" type="StringToRepeatBehaviorConverter"/>
+    <xs:attribute name="Storyboard.TargetProperty" type="StringToStringConverter"/>
+    <xs:attribute name="Storyboard.TargetName" type="StringToStringConverter"/>
+    <xs:attribute name="From" type="StringToColorConverter"/>
+    <xs:attribute name="To" type="StringToColorConverter"/>
+    <xs:attribute name="By" type="StringToColorConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dGlyphs">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Glyphs.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Glyphs.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Glyphs.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Glyphs.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Glyphs.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Glyphs.Fill" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="UnicodeString" type="StringToStringConverter"/>
+    <xs:attribute name="Indices" type="StringToStringConverter"/>
+    <xs:attribute name="FontUri" type="StringToStringConverter"/>
+    <xs:attribute name="StyleSimulations" type="StringToStringConverter"/>
+    <xs:attribute name="FontRenderingEmSize" type="StringToDoubleConverter"/>
+    <xs:attribute name="OriginX" type="StringToDoubleConverter"/>
+    <xs:attribute name="OriginY" type="StringToDoubleConverter"/>
+    <xs:attribute name="Fill" type="StringToBrushConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dKeyTime">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Seconds" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dKeySpline">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+  </xs:complexType>
+  <xs:complexType name="dKeyFrameCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dDoubleAnimationUsingKeyFrames">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peDoubleAnimationUsingKeyFrames" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gKeyFrame" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="AutoReverse" type="StringToBooleanConverter"/>
+    <xs:attribute name="BeginTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Duration" type="StringToDurationConverter"/>
+    <xs:attribute name="SpeedRatio" type="StringToDoubleConverter"/>
+    <xs:attribute name="FillBehavior" type="StringToFillBehaviorConverter"/>
+    <xs:attribute name="RepeatBehavior" type="StringToRepeatBehaviorConverter"/>
+    <xs:attribute name="Storyboard.TargetProperty" type="StringToStringConverter"/>
+    <xs:attribute name="Storyboard.TargetName" type="StringToStringConverter"/>
+    <xs:attribute name="From" type="StringToDoubleConverter"/>
+    <xs:attribute name="To" type="StringToDoubleConverter"/>
+    <xs:attribute name="By" type="StringToDoubleConverter"/>
+    <xs:attribute name="KeyFrames" type="StringToKeyFrameCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dDiscreteDoubleKeyFrame">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLinearDoubleKeyFrame">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dSplineDoubleKeyFrame">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="SplineDoubleKeyFrame.KeySpline" type="dKeySplineContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToDoubleConverter"/>
+    <xs:attribute name="KeySpline" type="StringToKeySplineConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dColorAnimationUsingKeyFrames">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peColorAnimationUsingKeyFrames" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gKeyFrame" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="AutoReverse" type="StringToBooleanConverter"/>
+    <xs:attribute name="BeginTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Duration" type="StringToDurationConverter"/>
+    <xs:attribute name="SpeedRatio" type="StringToDoubleConverter"/>
+    <xs:attribute name="FillBehavior" type="StringToFillBehaviorConverter"/>
+    <xs:attribute name="RepeatBehavior" type="StringToRepeatBehaviorConverter"/>
+    <xs:attribute name="Storyboard.TargetProperty" type="StringToStringConverter"/>
+    <xs:attribute name="Storyboard.TargetName" type="StringToStringConverter"/>
+    <xs:attribute name="From" type="StringToColorConverter"/>
+    <xs:attribute name="To" type="StringToColorConverter"/>
+    <xs:attribute name="By" type="StringToColorConverter"/>
+    <xs:attribute name="KeyFrames" type="StringToKeyFrameCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dDiscreteColorKeyFrame">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToColorConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLinearColorKeyFrame">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToColorConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dSplineColorKeyFrame">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="SplineColorKeyFrame.KeySpline" type="dKeySplineContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToColorConverter"/>
+    <xs:attribute name="KeySpline" type="StringToKeySplineConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPointAnimationUsingKeyFrames">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="pePointAnimationUsingKeyFrames" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gKeyFrame" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="AutoReverse" type="StringToBooleanConverter"/>
+    <xs:attribute name="BeginTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Duration" type="StringToDurationConverter"/>
+    <xs:attribute name="SpeedRatio" type="StringToDoubleConverter"/>
+    <xs:attribute name="FillBehavior" type="StringToFillBehaviorConverter"/>
+    <xs:attribute name="RepeatBehavior" type="StringToRepeatBehaviorConverter"/>
+    <xs:attribute name="Storyboard.TargetProperty" type="StringToStringConverter"/>
+    <xs:attribute name="Storyboard.TargetName" type="StringToStringConverter"/>
+    <xs:attribute name="From" type="StringToPointConverter"/>
+    <xs:attribute name="To" type="StringToPointConverter"/>
+    <xs:attribute name="By" type="StringToPointConverter"/>
+    <xs:attribute name="KeyFrames" type="StringToKeyFrameCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dDiscretePointKeyFrame">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLinearPointKeyFrame">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dSplinePointKeyFrame">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="SplinePointKeyFrame.KeySpline" type="dKeySplineContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="KeyTime" type="StringToKeyTimeConverter"/>
+    <xs:attribute name="Value" type="StringToPointConverter"/>
+    <xs:attribute name="KeySpline" type="StringToKeySplineConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPointAnimation">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="AutoReverse" type="StringToBooleanConverter"/>
+    <xs:attribute name="BeginTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Duration" type="StringToDurationConverter"/>
+    <xs:attribute name="SpeedRatio" type="StringToDoubleConverter"/>
+    <xs:attribute name="FillBehavior" type="StringToFillBehaviorConverter"/>
+    <xs:attribute name="RepeatBehavior" type="StringToRepeatBehaviorConverter"/>
+    <xs:attribute name="Storyboard.TargetProperty" type="StringToStringConverter"/>
+    <xs:attribute name="Storyboard.TargetName" type="StringToStringConverter"/>
+    <xs:attribute name="From" type="StringToPointConverter"/>
+    <xs:attribute name="To" type="StringToPointConverter"/>
+    <xs:attribute name="By" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dEllipse">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Ellipse.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Ellipse.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Ellipse.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Ellipse.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Ellipse.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Ellipse.Fill" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Ellipse.Stroke" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Fill" type="StringToBrushConverter"/>
+    <xs:attribute name="Stroke" type="StringToBrushConverter"/>
+    <xs:attribute name="StrokeMiterLimit" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeThickness" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeStartLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeEndLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeLineJoin" type="StringToPenLineJoinConverter"/>
+    <xs:attribute name="StrokeDashOffset" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeDashCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeDashArray" type="StringToDoublesConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLine">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Line.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Line.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Line.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Line.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Line.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Line.Fill" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Line.Stroke" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Fill" type="StringToBrushConverter"/>
+    <xs:attribute name="Stroke" type="StringToBrushConverter"/>
+    <xs:attribute name="StrokeMiterLimit" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeThickness" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeStartLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeEndLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeLineJoin" type="StringToPenLineJoinConverter"/>
+    <xs:attribute name="StrokeDashOffset" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeDashCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeDashArray" type="StringToDoublesConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="X1" type="StringToDoubleConverter"/>
+    <xs:attribute name="Y1" type="StringToDoubleConverter"/>
+    <xs:attribute name="X2" type="StringToDoubleConverter"/>
+    <xs:attribute name="Y2" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPolygon">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Polygon.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polygon.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polygon.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polygon.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polygon.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polygon.Fill" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polygon.Stroke" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Fill" type="StringToBrushConverter"/>
+    <xs:attribute name="Stroke" type="StringToBrushConverter"/>
+    <xs:attribute name="StrokeMiterLimit" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeThickness" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeStartLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeEndLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeLineJoin" type="StringToPenLineJoinConverter"/>
+    <xs:attribute name="StrokeDashOffset" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeDashCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeDashArray" type="StringToDoublesConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="FillRule" type="StringToFillRuleConverter"/>
+    <xs:attribute name="Points" type="StringToPointsConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dPolyline">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Polyline.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polyline.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polyline.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polyline.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polyline.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polyline.Fill" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Polyline.Stroke" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Fill" type="StringToBrushConverter"/>
+    <xs:attribute name="Stroke" type="StringToBrushConverter"/>
+    <xs:attribute name="StrokeMiterLimit" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeThickness" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeStartLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeEndLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeLineJoin" type="StringToPenLineJoinConverter"/>
+    <xs:attribute name="StrokeDashOffset" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeDashCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeDashArray" type="StringToDoublesConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="FillRule" type="StringToFillRuleConverter"/>
+    <xs:attribute name="Points" type="StringToPointsConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dRectangle">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Rectangle.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Rectangle.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Rectangle.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Rectangle.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Rectangle.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Rectangle.Fill" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Rectangle.Stroke" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Fill" type="StringToBrushConverter"/>
+    <xs:attribute name="Stroke" type="StringToBrushConverter"/>
+    <xs:attribute name="StrokeMiterLimit" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeThickness" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeStartLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeEndLineCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeLineJoin" type="StringToPenLineJoinConverter"/>
+    <xs:attribute name="StrokeDashOffset" type="StringToDoubleConverter"/>
+    <xs:attribute name="StrokeDashCap" type="StringToPenLineCapConverter"/>
+    <xs:attribute name="StrokeDashArray" type="StringToDoublesConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="RadiusX" type="StringToDoubleConverter"/>
+    <xs:attribute name="RadiusY" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dEllipseGeometry">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="EllipseGeometry.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="FillRule" type="StringToFillRuleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="Center" type="StringToPointConverter"/>
+    <xs:attribute name="RadiusX" type="StringToDoubleConverter"/>
+    <xs:attribute name="RadiusY" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dRectangleGeometry">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="RectangleGeometry.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="FillRule" type="StringToFillRuleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="Rect" type="StringToRectConverter"/>
+    <xs:attribute name="RadiusX" type="StringToDoubleConverter"/>
+    <xs:attribute name="RadiusY" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLineGeometry">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="LineGeometry.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="FillRule" type="StringToFillRuleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="StartPoint" type="StringToPointConverter"/>
+    <xs:attribute name="EndPoint" type="StringToPointConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dMatrix">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="M11" type="StringToDoubleConverter"/>
+    <xs:attribute name="M12" type="StringToDoubleConverter"/>
+    <xs:attribute name="M21" type="StringToDoubleConverter"/>
+    <xs:attribute name="M22" type="StringToDoubleConverter"/>
+    <xs:attribute name="OffsetX" type="StringToDoubleConverter"/>
+    <xs:attribute name="OffsetY" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dMatrixTransform">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="MatrixTransform.Matrix" type="dMatrixContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Matrix" type="StringToMatrixConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dImageBrush">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="ImageBrush.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="ImageBrush.RelativeTransform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="RelativeTransform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="AlignmentX" type="StringToAlignmentXConverter"/>
+    <xs:attribute name="AlignmentY" type="StringToAlignmentYConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="ImageFailed" type="StringToStringConverter"/>
+    <xs:attribute name="ImageSource" type="StringToStringConverter"/>
+    <xs:attribute name="DownloadProgress" type="StringToDoubleConverter"/>
+    <xs:attribute name="DownloadProgressChanged" type="StringToStringConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dMouseEventArgs">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Shift" type="StringToBooleanConverter"/>
+    <xs:attribute name="Ctrl" type="StringToBooleanConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTextBlock">
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:group ref="peTextBlock" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:group ref="gInline" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="FontSize" type="StringToDoubleConverter"/>
+    <xs:attribute name="FontFamily" type="StringToFontFamilyConverter"/>
+    <xs:attribute name="FontWeight" type="StringToFontWeightsConverter"/>
+    <xs:attribute name="FontStyle" type="StringToFontStylesConverter"/>
+    <xs:attribute name="FontStretch" type="StringToFontStretchesConverter"/>
+    <xs:attribute name="TextDecorations" type="StringToTextDecorationsConverter"/>
+    <xs:attribute name="Foreground" type="StringToBrushConverter"/>
+    <xs:attribute name="TextWrapping" type="StringToTextWrappingConverter"/>
+    <xs:attribute name="Text" type="StringToStringConverter"/>
+    <xs:attribute name="Inlines" type="StringToInlinesConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dRun">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Run.FontFamily" type="dFontFamilyContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Run.Foreground" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="FontSize" type="StringToDoubleConverter"/>
+    <xs:attribute name="FontFamily" type="StringToFontFamilyConverter"/>
+    <xs:attribute name="FontWeight" type="StringToFontWeightsConverter"/>
+    <xs:attribute name="FontStyle" type="StringToFontStylesConverter"/>
+    <xs:attribute name="FontStretch" type="StringToFontStretchesConverter"/>
+    <xs:attribute name="TextDecorations" type="StringToTextDecorationsConverter"/>
+    <xs:attribute name="Foreground" type="StringToBrushConverter"/>
+    <xs:attribute name="Text" type="StringToStringConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dLineBreak">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="LineBreak.FontFamily" type="dFontFamilyContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="LineBreak.Foreground" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="FontSize" type="StringToDoubleConverter"/>
+    <xs:attribute name="FontFamily" type="StringToFontFamilyConverter"/>
+    <xs:attribute name="FontWeight" type="StringToFontWeightsConverter"/>
+    <xs:attribute name="FontStyle" type="StringToFontStylesConverter"/>
+    <xs:attribute name="FontStretch" type="StringToFontStretchesConverter"/>
+    <xs:attribute name="TextDecorations" type="StringToTextDecorationsConverter"/>
+    <xs:attribute name="Foreground" type="StringToBrushConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dFontFamily">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+  </xs:complexType>
+  <xs:complexType name="dMediaElement">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="MediaElement.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MediaElement.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MediaElement.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MediaElement.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MediaElement.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MediaElement.Markers" type="dTimelineMarkerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MediaElement.Attributes" type="dMediaAttributeCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Source" type="StringToStringConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="MediaOpened" type="StringToStringConverter"/>
+    <xs:attribute name="MediaEnded" type="StringToStringConverter"/>
+    <xs:attribute name="MediaFailed" type="StringToStringConverter"/>
+    <xs:attribute name="IsMuted" type="StringToBooleanConverter"/>
+    <xs:attribute name="AutoPlay" type="StringToBooleanConverter"/>
+    <xs:attribute name="Volume" type="StringToDoubleConverter"/>
+    <xs:attribute name="Balance" type="StringToDoubleConverter"/>
+    <xs:attribute name="Position" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="DownloadProgressChanged" type="StringToStringConverter"/>
+    <xs:attribute name="BufferingProgressChanged" type="StringToStringConverter"/>
+    <xs:attribute name="CurrentStateChanged" type="StringToStringConverter"/>
+    <xs:attribute name="BufferingTime" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Markers" type="StringToTimelineMarkerCollectionConverter"/>
+    <xs:attribute name="MarkerReached" type="StringToStringConverter"/>
+    <xs:attribute name="Attributes" type="StringToMediaAttributeCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dImage">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Image.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Image.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Image.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Image.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Image.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="ImageFailed" type="StringToStringConverter"/>
+    <xs:attribute name="DownloadProgressChanged" type="StringToStringConverter"/>
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Source" type="StringToStringConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dEventArgs">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+  </xs:complexType>
+  <xs:complexType name="dVisualCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dInlines">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dKeyboardEventArgs">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Key" type="StringToDoubleConverter"/>
+    <xs:attribute name="PlatformKeyCode" type="StringToDoubleConverter"/>
+    <xs:attribute name="Shift" type="StringToBooleanConverter"/>
+    <xs:attribute name="Ctrl" type="StringToBooleanConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dDownloader">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="DownloadProgress" type="StringToDoubleConverter"/>
+    <xs:attribute name="ResponseText" type="StringToStringConverter"/>
+    <xs:attribute name="Status" type="StringToInt32Converter"/>
+    <xs:attribute name="StatusText" type="StringToStringConverter"/>
+    <xs:attribute name="URI" type="StringToStringConverter"/>
+    <xs:attribute name="DownloadProgressChanged" type="StringToStringConverter"/>
+    <xs:attribute name="Completed" type="StringToStringConverter"/>
+    <xs:attribute name="DownloadFailed" type="StringToStringConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dVideoBrush">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="VideoBrush.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="VideoBrush.RelativeTransform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Transform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="RelativeTransform" type="StringToTransformGroupConverter"/>
+    <xs:attribute name="AlignmentX" type="StringToAlignmentXConverter"/>
+    <xs:attribute name="AlignmentY" type="StringToAlignmentYConverter"/>
+    <xs:attribute name="Stretch" type="StringToStretchConverter"/>
+    <xs:attribute name="SourceName" type="StringToStringConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dInkPresenter">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="InkPresenter.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="InkPresenter.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="InkPresenter.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="InkPresenter.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="InkPresenter.Children" type="dVisualCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="InkPresenter.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="InkPresenter.Background" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="InkPresenter.Strokes" type="dStrokeCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Opacity" type="StringToDoubleConverter"/>
+    <xs:attribute name="Clip" type="StringToGeometryConverter"/>
+    <xs:attribute name="RenderTransform" type="StringToTransformConverter"/>
+    <xs:attribute name="Triggers" type="StringToTriggerCollectionConverter"/>
+    <xs:attribute name="Canvas.Left" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.Top" type="StringToDoubleConverter"/>
+    <xs:attribute name="Canvas.ZIndex" type="StringToInt32Converter"/>
+    <xs:attribute name="OpacityMask" type="StringToBrushConverter"/>
+    <xs:attribute name="Loaded" type="StringToStringConverter"/>
+    <xs:attribute name="Children" type="StringToVisualCollectionConverter"/>
+    <xs:attribute name="MouseMove" type="StringToStringConverter"/>
+    <xs:attribute name="MouseEnter" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeave" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonDown" type="StringToStringConverter"/>
+    <xs:attribute name="MouseLeftButtonUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyUp" type="StringToStringConverter"/>
+    <xs:attribute name="KeyDown" type="StringToStringConverter"/>
+    <xs:attribute name="GotFocus" type="StringToStringConverter"/>
+    <xs:attribute name="LostFocus" type="StringToStringConverter"/>
+    <xs:attribute name="RenderTransformOrigin" type="StringToPointConverter"/>
+    <xs:attribute name="Cursor" type="StringToCursorsConverter"/>
+    <xs:attribute name="IsHitTestable" type="StringToBooleanConverter"/>
+    <xs:attribute name="Visibility" type="StringToVisibilityConverter"/>
+    <xs:attribute name="Resources" type="StringToResourceCollectionConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+    <xs:attribute name="Background" type="StringToBrushConverter"/>
+    <xs:attribute name="Strokes" type="StringToStrokeCollectionConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dStroke">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Stroke.StylusPoints" type="dStylusPointCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Stroke.DrawingAttributes" type="dDrawingAttributesContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="StylusPoints" type="StringToStylusPointCollectionConverter"/>
+    <xs:attribute name="DrawingAttributes" type="StringToDrawingAttributesConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dStrokeCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dStylusPoint">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="X" type="StringToDoubleConverter"/>
+    <xs:attribute name="Y" type="StringToDoubleConverter"/>
+    <xs:attribute name="PressureFactor" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dStylusPointCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dStylusInfo">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="DeviceType" type="StringToTabletDeviceTypeConverter"/>
+    <xs:attribute name="IsInverted" type="StringToTabletDeviceTypeConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dDrawingAttributes">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Color" type="StringToColorConverter"/>
+    <xs:attribute name="OutlineColor" type="StringToColorConverter"/>
+    <xs:attribute name="Width" type="StringToDoubleConverter"/>
+    <xs:attribute name="Height" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dErrorEventArgs">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="ErrorMessage" type="StringToStringConverter"/>
+    <xs:attribute name="ErrorCode" type="StringToInt32Converter"/>
+    <xs:attribute name="ErrorType" type="StringToErrorTypeConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dParserErrorEventArgs">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="ErrorMessage" type="StringToStringConverter"/>
+    <xs:attribute name="ErrorCode" type="StringToInt32Converter"/>
+    <xs:attribute name="ErrorType" type="StringToErrorTypeConverter"/>
+    <xs:attribute name="XamlFile" type="StringToStringConverter"/>
+    <xs:attribute name="LineNumber" type="StringToInt32Converter"/>
+    <xs:attribute name="CharPosition" type="StringToInt32Converter"/>
+    <xs:attribute name="XmlElement" type="StringToStringConverter"/>
+    <xs:attribute name="XmlAttribute" type="StringToStringConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dRuntimeErrorEventArgs">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="ErrorMessage" type="StringToStringConverter"/>
+    <xs:attribute name="ErrorCode" type="StringToInt32Converter"/>
+    <xs:attribute name="ErrorType" type="StringToErrorTypeConverter"/>
+    <xs:attribute name="MethodName" type="StringToStringConverter"/>
+    <xs:attribute name="LineNumber" type="StringToInt32Converter"/>
+    <xs:attribute name="CharPosition" type="StringToInt32Converter"/>
+  </xs:complexType>
+  <xs:complexType name="dTimelineMarker">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Time" type="StringToTimeSpanConverter"/>
+    <xs:attribute name="Type" type="StringToStringConverter"/>
+    <xs:attribute name="Text" type="StringToStringConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTimelineMarkerCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTimelineMarkerEventArgs">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="TimelineMarkerEventArgs.Marker" type="dTimelineMarkerContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Marker" type="StringToTimelineMarkerConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dResourceCollection">
+    <xs:attribute name="Name" type="StringToStringConverter"/>
+    <xs:attributeGroup ref="xAttributes" />
+    <xs:attribute name="Count" type="StringToDoubleConverter"/>
+  </xs:complexType>
+  <xs:complexType name="dTransformContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gTransform"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dTransformGroupContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gTransformGroup"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:group name="peTransformGroup">
+    <xs:choice>
+      <xs:element name="TransformGroup.Children" type="dTransformCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="pePathFigure">
+    <xs:choice>
+      <xs:element name="PathFigure.Segments" type="dPathSegmentCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="dGeometryContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gGeometry"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:group name="pePathGeometry">
+    <xs:choice>
+      <xs:element name="PathGeometry.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="PathGeometry.Figures" type="dPathFigureCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="peGeometryGroup">
+    <xs:choice>
+      <xs:element name="GeometryGroup.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="GeometryGroup.Children" type="dGeometryCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="dBrushContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gBrush"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:group name="peLinearGradientBrush">
+    <xs:choice>
+      <xs:element name="LinearGradientBrush.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="LinearGradientBrush.RelativeTransform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="LinearGradientBrush.GradientStops" type="dGradientStopCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="peRadialGradientBrush">
+    <xs:choice>
+      <xs:element name="RadialGradientBrush.Transform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="RadialGradientBrush.RelativeTransform" type="dTransformGroupContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="RadialGradientBrush.GradientStops" type="dGradientStopCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="peCanvas">
+    <xs:choice>
+      <xs:element name="Canvas.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Canvas.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Canvas.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Canvas.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Canvas.Children" type="dVisualCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Canvas.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Canvas.Background" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="peBeginStoryboard">
+    <xs:choice>
+      <xs:element name="BeginStoryboard.Storyboard" type="dStoryboardContainer" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="dStoryboardContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gStoryboard"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:group name="peStoryboard">
+    <xs:choice>
+      <xs:element name="Storyboard.Children" type="dTimelineCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="peEventTrigger">
+    <xs:choice>
+      <xs:element name="EventTrigger.Actions" type="dTriggerActionCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="dTriggerCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gEventTrigger"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dTransformCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gTransform"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dPathSegmentCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gPathSegment"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dPathFigureCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gPathFigure"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dGeometryCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gGeometry"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dGradientStopCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gGradientStop"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dTriggerActionCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gBeginStoryboard"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dKeySplineContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gKeySpline"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:group name="peDoubleAnimationUsingKeyFrames">
+    <xs:choice>
+      <xs:element name="DoubleAnimationUsingKeyFrames.KeyFrames" type="dKeyFrameCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="peColorAnimationUsingKeyFrames">
+    <xs:choice>
+      <xs:element name="ColorAnimationUsingKeyFrames.KeyFrames" type="dKeyFrameCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="pePointAnimationUsingKeyFrames">
+    <xs:choice>
+      <xs:element name="PointAnimationUsingKeyFrames.KeyFrames" type="dKeyFrameCollectionContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="dMatrixContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gMatrix"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:group name="peTextBlock">
+    <xs:choice>
+      <xs:element name="TextBlock.Clip" type="dGeometryContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="TextBlock.RenderTransform" type="dTransformContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="TextBlock.Triggers" type="dTriggerCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="TextBlock.OpacityMask" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="TextBlock.Resources" type="dResourceCollectionContent" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="TextBlock.FontFamily" type="dFontFamilyContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="TextBlock.Foreground" type="dBrushContainer" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="TextBlock.Inlines" type="dInlinesContent" minOccurs="0" maxOccurs="1"/>
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="dFontFamilyContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gFontFamily"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dVisualCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gUIElement"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dInlinesContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gInline"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dStrokeCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gStroke"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dStylusPointCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gStylusPoint"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dDrawingAttributesContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gDrawingAttributes"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dTimelineMarkerContainer">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:group ref="gTimelineMarker"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dTimelineMarkerCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gTimelineMarker"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dResourceCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gStoryboard"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dMediaAttributeCollectionContent">
+  </xs:complexType>
+  <xs:complexType name="dTimelineCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gTimeline"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dKeyFrameCollectionContent">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="gKeyFrame"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:group name="gTransform">
+    <xs:choice>
+      <xs:element ref="TransformGroup"/>
+      <xs:element ref="RotateTransform"/>
+      <xs:element ref="ScaleTransform"/>
+      <xs:element ref="SkewTransform"/>
+      <xs:element ref="TranslateTransform"/>
+      <xs:element ref="MatrixTransform"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gTransformGroup">
+    <xs:choice>
+      <xs:element ref="TransformGroup"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gPathSegment">
+    <xs:choice>
+      <xs:element ref="LineSegment"/>
+      <xs:element ref="BezierSegment"/>
+      <xs:element ref="QuadraticBezierSegment"/>
+      <xs:element ref="ArcSegment"/>
+      <xs:element ref="PolyLineSegment"/>
+      <xs:element ref="PolyBezierSegment"/>
+      <xs:element ref="PolyQuadraticBezierSegment"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gPathFigure">
+    <xs:choice>
+      <xs:element ref="PathFigure"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gGeometry">
+    <xs:choice>
+      <xs:element ref="PathGeometry"/>
+      <xs:element ref="GeometryGroup"/>
+      <xs:element ref="EllipseGeometry"/>
+      <xs:element ref="RectangleGeometry"/>
+      <xs:element ref="LineGeometry"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gBrush">
+    <xs:choice>
+      <xs:element ref="SolidColorBrush"/>
+      <xs:group ref="gGradientBrush" minOccurs="0"/>
+      <xs:group ref="gTileBrush" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gGradientStop">
+    <xs:choice>
+      <xs:element ref="GradientStop"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gGradientBrush">
+    <xs:choice>
+      <xs:element ref="LinearGradientBrush"/>
+      <xs:element ref="RadialGradientBrush"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gUIElement">
+    <xs:choice>
+      <xs:group ref="gFrameworkElement" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gBeginStoryboard">
+    <xs:choice>
+      <xs:element ref="BeginStoryboard"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gStoryboard">
+    <xs:choice>
+      <xs:element ref="Storyboard"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gTimeline">
+    <xs:choice>
+      <xs:group ref="gTimelineGroup" minOccurs="0"/>
+      <xs:group ref="gAnimation" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gTimelineGroup">
+    <xs:choice>
+      <xs:group ref="gParallelTimeline" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gEventTrigger">
+    <xs:choice>
+      <xs:element ref="EventTrigger"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gFrameworkElement">
+    <xs:choice>
+      <xs:group ref="gShape" minOccurs="0"/>
+      <xs:element ref="Glyphs"/>
+      <xs:element ref="TextBlock"/>
+      <xs:group ref="gPanel" minOccurs="0"/>
+      <xs:group ref="gMediaBase" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gKeyFrame">
+    <xs:choice>
+      <xs:group ref="gDoubleKeyFrame" minOccurs="0"/>
+      <xs:group ref="gColorKeyFrame" minOccurs="0"/>
+      <xs:group ref="gPointKeyFrame" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gKeySpline">
+    <xs:choice>
+      <xs:element ref="KeySpline"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gDoubleKeyFrame">
+    <xs:choice>
+      <xs:element ref="DiscreteDoubleKeyFrame"/>
+      <xs:element ref="LinearDoubleKeyFrame"/>
+      <xs:element ref="SplineDoubleKeyFrame"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gColorKeyFrame">
+    <xs:choice>
+      <xs:element ref="DiscreteColorKeyFrame"/>
+      <xs:element ref="LinearColorKeyFrame"/>
+      <xs:element ref="SplineColorKeyFrame"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gPointKeyFrame">
+    <xs:choice>
+      <xs:element ref="DiscretePointKeyFrame"/>
+      <xs:element ref="LinearPointKeyFrame"/>
+      <xs:element ref="SplinePointKeyFrame"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gAnimation">
+    <xs:choice>
+      <xs:group ref="gDoubleAnimation" minOccurs="0"/>
+      <xs:group ref="gColorAnimation" minOccurs="0"/>
+      <xs:group ref="gPointAnimation" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gMatrix">
+    <xs:choice>
+      <xs:element ref="Matrix"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gTileBrush">
+    <xs:choice>
+      <xs:element ref="ImageBrush"/>
+      <xs:element ref="VideoBrush"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gFontFamily">
+    <xs:choice>
+      <xs:element ref="FontFamily"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gPanel">
+    <xs:choice>
+      <xs:group ref="gCanvas" minOccurs="0"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gMediaBase">
+    <xs:choice>
+      <xs:element ref="MediaElement"/>
+      <xs:element ref="Image"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gInline">
+    <xs:choice>
+      <xs:element ref="Run"/>
+      <xs:element ref="LineBreak"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gStroke">
+    <xs:choice>
+      <xs:element ref="Stroke"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gStylusPoint">
+    <xs:choice>
+      <xs:element ref="StylusPoint"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gDrawingAttributes">
+    <xs:choice>
+      <xs:element ref="DrawingAttributes"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gTimelineMarker">
+    <xs:choice>
+      <xs:element ref="TimelineMarker"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gShape">
+    <xs:choice>
+      <xs:element ref="Path"/>
+      <xs:element ref="Ellipse"/>
+      <xs:element ref="Line"/>
+      <xs:element ref="Polygon"/>
+      <xs:element ref="Polyline"/>
+      <xs:element ref="Rectangle"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gCanvas">
+    <xs:choice>
+      <xs:element ref="Canvas"/>
+      <xs:element ref="InkPresenter"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gParallelTimeline">
+    <xs:choice>
+      <xs:element ref="Storyboard"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gDoubleAnimation">
+    <xs:choice>
+      <xs:element ref="DoubleAnimation"/>
+      <xs:element ref="DoubleAnimationUsingKeyFrames"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gColorAnimation">
+    <xs:choice>
+      <xs:element ref="ColorAnimation"/>
+      <xs:element ref="ColorAnimationUsingKeyFrames"/>
+    </xs:choice>
+  </xs:group>
+  <xs:group name="gPointAnimation">
+    <xs:choice>
+      <xs:element ref="PointAnimation"/>
+      <xs:element ref="PointAnimationUsingKeyFrames"/>
+    </xs:choice>
+  </xs:group>
+  <xs:simpleType name="StringToDoubleConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToPointConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToRectConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToColorConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToBooleanConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="True"/>
+      <xs:enumeration value="False"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToFillRuleConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EvenOdd"/>
+      <xs:enumeration value="NonZero"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToSweepDirectionConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Counterclockwise"/>
+      <xs:enumeration value="Clockwise"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToColorInterpolationModeConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SRrgLinearInterpolation"/>
+      <xs:enumeration value="ScRgbLinearInterpolation"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToGradientSpreadMethodConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Pad"/>
+      <xs:enumeration value="Reflect"/>
+      <xs:enumeration value="Repeat"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToBrushMappingModeConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Absolute"/>
+      <xs:enumeration value="RelativeToBoundingBox"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToFillBehaviorConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HoldEnd"/>
+      <xs:enumeration value="Stop"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTransformConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTransformGroupConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToGeometryConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToBrushConverter">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="^#([a-f]|[A-F]|[0-9]){4}(([a-f]|[A-F]|[0-9]){4})?$"/>
+      <xs:pattern value="^#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?$"/>
+      <xs:pattern value="AliceBlue|AntiqueWhite|Aqua|Aquamarine|Azure|Beige|Bisque|Black|BlanchedAlmond|Blue|BlueViolet|Brown|BurlyWood|CadetBlue|Chartreuse|Chocolate|Coral|CornflowerBlue|Cornsilk|Crimson|Cyan|DarkBlue|DarkCyan|DarkGoldenrod|DarkGray|DarkGreen|DarkKhaki|DarkMagenta|DarkOliveGreen|DarkOrange|DarkOrchid|DarkRed|DarkSalmon|DarkSeaGreen|DarkSlateBlue|DarkSlateGray|DarkTurquoise|DarkViolet|DeepPink|DeepSkyBlue|DimGray|DodgerBlue|Firebrick|FloralWhite|ForestGreen|Fuchsia|Gainsboro|GhostWhite|Gold|Goldenrod|Gray|Green|GreenYellow|Honeydew|HotPink|IndianRed|Indigo|Ivory|Khaki|Lavender|LavenderBlush|LawnGreen|LemonChiffon|LightBlue|LightCoral|LightCyan|LightGoldenrodYellow|LightGray|LightGreen|LightPink|LightSalmon|LightSeaGreen|LightSkyBlue|LightSlateGray|LightSteelBlue|LightYellow|Lime|LimeGreen|Linen|Magenta|Maroon|MediumAquamarine|MediumBlue|MediumOrchid|MediumPurple|MediumSeaGreen|MediumSlateBlue|MediumSpringGreen|MediumTurquoise|MediumVioletRed|MidnightBlue|MintCream|MistyRose|Moccasin|NavajoWhite|Navy|OldLace|Olive|OliveDrab|Orange|OrangeRed|Orchid|PaleGoldenrod|PaleGreen|PaleTurquoise|PaleVioletRed|PapayaWhip|PeachPuff|Peru|Pink|Plum|PowderBlue|Purple|Red|RosyBrown|RoyalBlue|SaddleBrown|Salmon|SandyBrown|SeaGreen|SeaShell|Sienna|Silver|SkyBlue|SlateBlue|SlateGray|Snow|SpringGreen|SteelBlue|Tan|Teal|Thistle|Tomato|Transparent|Turquoise|Violet|Wheat|White|WhiteSmoke|Yellow|YellowGreen"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTimelineCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToStoryboardConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTimeSpanConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToDurationConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToStringConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTriggerCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToDoublesConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToPointsConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTransformCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToPathSegmentCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToPathFigureCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToGeometryCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToGradientStopCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTriggerActionCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToKeyTimeConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToKeySplineConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToKeyFrameCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToPenLineCapConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Flat"/>
+      <xs:enumeration value="Square"/>
+      <xs:enumeration value="Round"/>
+      <xs:enumeration value="Triangle"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToPenLineJoinConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Miter"/>
+      <xs:enumeration value="Bevel"/>
+      <xs:enumeration value="Round"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToRepeatBehaviorConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToMatrixConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToAlignmentXConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Left"/>
+      <xs:enumeration value="Center"/>
+      <xs:enumeration value="Right"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToAlignmentYConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Top"/>
+      <xs:enumeration value="Center"/>
+      <xs:enumeration value="Bottom"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToStretchConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None"/>
+      <xs:enumeration value="Fill"/>
+      <xs:enumeration value="Uniform"/>
+      <xs:enumeration value="UniformToFill"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToFontFamilyConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTextWrappingConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Wrap"/>
+      <xs:enumeration value="NoWrap"/>
+      <xs:enumeration value="WrapWithOverflow"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToFontWeightsConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Thin"/>
+      <xs:enumeration value="ExtraLight"/>
+      <xs:enumeration value="UltraLight"/>
+      <xs:enumeration value="Light"/>
+      <xs:enumeration value="Normal"/>
+      <xs:enumeration value="Regular"/>
+      <xs:enumeration value="Medium"/>
+      <xs:enumeration value="DemiBold"/>
+      <xs:enumeration value="SemiBold"/>
+      <xs:enumeration value="Bold"/>
+      <xs:enumeration value="ExtraBold"/>
+      <xs:enumeration value="UltraBold"/>
+      <xs:enumeration value="Black"/>
+      <xs:enumeration value="Heavy"/>
+      <xs:enumeration value="ExtraBlack"/>
+      <xs:enumeration value="UltraBlack"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToFontStylesConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Normal"/>
+      <xs:enumeration value="Oblique"/>
+      <xs:enumeration value="Italic"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToFontStretchesConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UltraCondensed"/>
+      <xs:enumeration value="ExtraCondensed"/>
+      <xs:enumeration value="Condensed"/>
+      <xs:enumeration value="SemiCondensed"/>
+      <xs:enumeration value="Normal"/>
+      <xs:enumeration value="Medium"/>
+      <xs:enumeration value="SemiExpanded"/>
+      <xs:enumeration value="Expanded"/>
+      <xs:enumeration value="ExtraExpanded"/>
+      <xs:enumeration value="UltraExpanded"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToVisualCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToInlinesConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToCursorsConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Arrow"/>
+      <xs:enumeration value="Hand"/>
+      <xs:enumeration value="Wait"/>
+      <xs:enumeration value="IBeam"/>
+      <xs:enumeration value="None"/>
+      <xs:enumeration value="Default"/>
+      <xs:enumeration value="Stylus"/>
+      <xs:enumeration value="Eraser"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToVisibilityConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Visible"/>
+      <xs:enumeration value="Collapsed"/>
+      <xs:enumeration value="Hidden"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToInt32Converter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToStrokeCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToStylusPointCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToDrawingAttributesConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTabletDeviceTypeConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTextDecorationsConverter">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None"/>
+      <xs:enumeration value="Underline"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTimelineMarkerConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToTimelineMarkerCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToErrorTypeConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToResourceCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringToMediaAttributeCollectionConverter">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attributeGroup name="xAttributes">
+    <xs:attribute ref="x:Class"/>
+    <xs:attribute ref="x:Key"/>
+    <xs:attribute ref="x:Name"/>
+    <xs:attribute ref="x:Language"/>
+  </xs:attributeGroup>
+</xs:schema>

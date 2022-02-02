@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SimpleCSharpApp": {
+      "commandName": "Project",
+      "commandLineArgs": "/arg1 -arg2"
+    }
+  }
+}

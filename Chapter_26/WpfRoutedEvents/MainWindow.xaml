@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfRoutedEvents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfRoutedEvents"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnClickMe" Height="75" Width = "250" Click ="BtnClickMe_Clicked">
+            <StackPanel Orientation ="Horizontal">
+                <Label Height="50" FontSize ="20">Fancy Button!</Label>
+                <Canvas Height ="50" Width ="100" >
+                    <Ellipse Name = "outerEllipse" Fill ="Green" Height ="25"
+                             PreviewMouseDown ="outerEllipse_PreviewMouseDown"
+                             MouseDown ="outerEllipse_MouseDown"
+                             Width ="50" Cursor="Hand" Canvas.Left="25" Canvas.Top="12"/>
+                    <Ellipse Name = "innerEllipse" Fill ="Yellow" Height = "15" Width ="36"
+                             Canvas.Top="17" Canvas.Left="32"/>
+                </Canvas>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

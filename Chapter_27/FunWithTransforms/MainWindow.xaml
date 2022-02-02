@@ -1,0 +1,43 @@
+﻿<Window x:Class="FunWithTransforms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunWithTransforms"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Button Name="btnSkew" Content="Skew" Click="Skew"/>
+            <Button Name="btnRotate" Content="Rotate" Click="Rotate"/>
+            <Button Name="btnFlip" Content="Flip" Click="Flip"/>
+        </StackPanel>
+        <Canvas x:Name="myCanvas" Grid.Column="1" Grid.Row="0">
+            <Ellipse HorizontalAlignment="Left" VerticalAlignment="Top"
+                     Height="186"  Width="92" Stroke="Black"
+                     Canvas.Left="20" Canvas.Top="31">
+                <Ellipse.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF951ED8" Offset="0.215"/>
+                        <GradientStop Color="#FF2FECB0" Offset="1"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse HorizontalAlignment="Left" VerticalAlignment="Top"
+                     Height="101" Width="110" Stroke="Black"
+                     Canvas.Left="122" Canvas.Top="126">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFB91DDC" Offset="0.355"/>
+                        <GradientStop Color="#FFB0381D" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Canvas>
+
+    </Grid>
+</Window>

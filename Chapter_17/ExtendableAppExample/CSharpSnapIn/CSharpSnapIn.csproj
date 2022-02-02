@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\CommonSnappableTypes\CommonSnappableTypes.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command="copy $(TargetPath) $(ProjectDir)..\MyExtendableApp\$(OutDir)$(TargetFileName) /Y"  />
+        <Exec Command="copy $(TargetPath) $(ProjectDir)..\MyExtendableApp\$(TargetFileName) /Y" />
+        <!-- <Exec Command="copy $(TargetPath) $(SolutionDir)MyExtendableApp\$(OutDir)$(TargetFileName) /Y"  />
+    <Exec Command="copy $(TargetPath) $(SolutionDir)MyExtendableApp\$(TargetFileName) /Y" /> -->
+    </Target>
+
+</Project>

@@ -1,0 +1,92 @@
+﻿<Window x:Class="MyWordPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyWordPad"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!-- This will inform the Window which handlers to call,
+       when testing for the Open and Save commands. -->
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open"
+                        Executed="OpenCmdExecuted"
+                        CanExecute="OpenCmdCanExecute"/>
+        <CommandBinding Command="ApplicationCommands.Save"
+                        Executed="SaveCmdExecuted"
+                        CanExecute="SaveCmdCanExecute"/>
+    </Window.CommandBindings>
+
+    <!-- This panel establishes the content for the window -->
+    <DockPanel>
+        <!-- Dock menu system on the top -->
+        <Menu DockPanel.Dock="Top"
+              HorizontalAlignment="Left" Background="White" BorderBrush="Black">
+            <MenuItem Header="_File">
+                <MenuItem Command="ApplicationCommands.Open" />
+                <MenuItem Command="ApplicationCommands.Save" />
+                <Separator />
+                <MenuItem Header="_Exit" MouseEnter="MouseEnterExitArea"
+                          MouseLeave="MouseLeaveArea" Click="FileExit_Click" />
+            </MenuItem>
+            <!-- New menu item with commands! -->
+            <MenuItem Header="_Edit">
+                <MenuItem Command="ApplicationCommands.Copy" />
+                <MenuItem Command="ApplicationCommands.Cut" />
+                <MenuItem Command="ApplicationCommands.Paste" />
+            </MenuItem>
+
+
+            <MenuItem Header="_Tools">
+                <MenuItem Header="_Spelling Hints"
+                          MouseEnter="MouseEnterToolsHintsArea"
+                          MouseLeave="MouseLeaveArea" Click="ToolsSpellingHints_Click" />
+            </MenuItem>
+        </Menu>
+        <!-- Put Toolbar under the Menu -->
+        <ToolBar DockPanel.Dock="Top">
+            <Button Content="Exit" MouseEnter="MouseEnterExitArea"
+                    MouseLeave="MouseLeaveArea" Click="FileExit_Click" />
+            <Separator />
+            <Button Content="Check" MouseEnter="MouseEnterToolsHintsArea"
+                    MouseLeave="MouseLeaveArea" Click="ToolsSpellingHints_Click"
+                    Cursor="Help" />
+        </ToolBar>
+        <!-- Put a StatusBar at the bottom -->
+        <StatusBar DockPanel.Dock="Bottom" Background="Beige">
+            <StatusBarItem>
+                <TextBlock Name="statBarText" Text="Ready" />
+            </StatusBarItem>
+        </StatusBar>
+        <Grid DockPanel.Dock="Left" Background="AliceBlue">
+            <!-- Define the rows and columns -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <GridSplitter Grid.Column="0" Width="5" Background="Gray" />
+            <StackPanel Grid.Column="0" VerticalAlignment="Stretch">
+                <Label Name="lblSpellingInstructions" FontSize="14" Margin="10,10,0,0">
+                    Spelling Hints
+                </Label>
+
+                <Expander Name="expanderSpelling" Header="Try these!"
+                          Margin="10,10,10,10">
+                    <!-- This will be filled programmatically -->
+                    <Label Name="lblSpellingHints" FontSize="12" />
+                </Expander>
+            </StackPanel>
+
+            <!-- This will be the area to type within -->
+            <TextBox Grid.Column="1"
+                     SpellCheck.IsEnabled="True"
+                     AcceptsReturn="True"
+                     Name="txtData" FontSize="14"
+                     BorderBrush="Blue"
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto" />
+        </Grid>
+
+    </DockPanel>
+</Window>

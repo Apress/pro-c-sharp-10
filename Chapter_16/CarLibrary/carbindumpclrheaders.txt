@@ -1,0 +1,29 @@
+Microsoft (R) COFF/PE Dumper Version 14.12.25835.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file .\bin\debug\net6.0\CarLibrary.dll
+
+File Type: DLL
+
+  clr Header:
+
+              48 cb
+            2.05 runtime version
+            2158 [     B4C] RVA [size] of MetaData Directory
+               1 flags
+                   IL Only
+               0 entry point token
+               0 [       0] RVA [size] of Resources Directory
+               0 [       0] RVA [size] of StrongNameSignature Directory
+               0 [       0] RVA [size] of CodeManagerTable Directory
+               0 [       0] RVA [size] of VTableFixups Directory
+               0 [       0] RVA [size] of ExportAddressTableJumps Directory
+               0 [       0] RVA [size] of ManagedNativeHeader Directory
+
+
+  Summary
+
+        2000 .reloc
+        2000 .rsrc
+        2000 .text

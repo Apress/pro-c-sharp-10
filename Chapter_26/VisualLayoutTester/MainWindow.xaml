@@ -1,0 +1,23 @@
+﻿<Window x:Class="VisualLayoutTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualLayoutTester"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="697*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Column="1" HorizontalAlignment="Left" Height="168" Margin="21,14,0,0" Grid.Row="1" VerticalAlignment="Top" Width="276">
+            <Button x:Name="button" Content="Button" Width="75"/>
+            <Calendar Width="100"/>
+        </DockPanel>
+    </Grid>
+</Window>

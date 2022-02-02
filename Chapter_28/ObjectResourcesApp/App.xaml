@@ -1,0 +1,19 @@
+﻿<Application x:Class="ObjectResourcesApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ObjectResourcesApp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--<RadialGradientBrush x:Key="myBrush">
+            <GradientStop Color="#FFC44EC4" Offset="0" />
+            <GradientStop Color="#FF829CEB" Offset="1" />
+            <GradientStop Color="#FF793879" Offset="0.669" />
+        </RadialGradientBrush>-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="MyBrushes.xaml" />-->
+                <ResourceDictionary Source="/MyBrushesLibrary;Component/MyBrushes.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
