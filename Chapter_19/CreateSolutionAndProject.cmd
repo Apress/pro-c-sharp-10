@@ -27,7 +27,4 @@ dotnet sln .\Chapter19_AllProjects.sln add .\MyDirectoryWatcher
 dotnet new console -lang c# -n SimpleSerialize -o .\SimpleSerialize -f net6.0
 dotnet sln .\Chapter19_AllProjects.sln add .\SimpleSerialize
 
-dotnet new console -lang c# -n  -o .\ -f net6.0
-dotnet sln .\Chapter19_AllProjects.sln add .\
-
 pause

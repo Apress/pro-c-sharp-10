@@ -77,7 +77,7 @@ namespace TreesAndTemplatesApp
                 // Load PresentationFramework, and create an instance of the
                 // specified control. Give it a size for display purposes, then add to the
                 // empty StackPanel.
-                Assembly asm = Assembly.Load("PresentationFramework, Version=4.0.0.0," +
+                Assembly asm = Assembly.Load("PresentationFramework, Version=6.0.0.0," +
                                              "Culture=neutral, PublicKeyToken=31bf3856ad364e35");
                 _ctrlToExamine = (Control)asm.CreateInstance(txtFullName.Text);
                 _ctrlToExamine.Height = 200;

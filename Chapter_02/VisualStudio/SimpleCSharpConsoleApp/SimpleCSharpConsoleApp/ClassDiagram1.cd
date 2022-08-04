@@ -17,7 +17,7 @@
   <Class Name="SimpleCSharpConsoleApp.SportsCar">
     <Position X="0.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SportsCar.cs</FileName>
     </TypeIdentifier>
   </Class>

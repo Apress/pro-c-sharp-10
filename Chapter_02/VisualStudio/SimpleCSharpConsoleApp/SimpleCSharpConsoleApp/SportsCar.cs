@@ -9,7 +9,8 @@ namespace SimpleCSharpConsoleApp
     {
         public string GetPetName()
         {
-            return "Fred";
+            PetName = "Fred";
+            return PetName;
         }
     }
 }

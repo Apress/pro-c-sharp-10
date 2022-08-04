@@ -7,7 +7,7 @@ namespace SimpleCSharpConsoleApp
 {
     public class Make
     {
-        public int Name
+        public string Name
         {
             get => default;
             set
