@@ -1,6 +1,6 @@
 ﻿using FunWithBitwiseOperations;
 
-Console.WriteLine("===== Fun wih Bitwise Operations");
+Console.WriteLine("===== Fun with Bitwise Operations =====");
 
 Console.WriteLine("6 & 4 = {0} | {1}", 6 & 4, Convert.ToString(6 & 4,2));
 Console.WriteLine("6 | 4 = {0} | {1}", 6 | 4, Convert.ToString(6 | 4,2));
