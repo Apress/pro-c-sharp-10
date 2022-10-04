@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+        <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     </PropertyGroup>
 
 </Project>
