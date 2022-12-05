@@ -60,19 +60,19 @@ Console.WriteLine($"{first} {last}");
 Console.WriteLine();
 Console.WriteLine("=> Deconstructing Tuples");
 (int X, int Y) myTuple = (4,5);
-int x = 0;
-int y = 0;
+int x;
+int y;
 (x,y) = myTuple;
 Console.WriteLine($"X is: {x}");
 Console.WriteLine($"Y is: {y}");
 (int x1, int y1) = myTuple;
-Console.WriteLine($"x1 is: {x}");
-Console.WriteLine($"y1 is: {y}");
+Console.WriteLine($"x1 is: {x1}");
+Console.WriteLine($"y1 is: {y1}");
 
-int x2 = 0;
+int x2;
 (x2, int y2) = myTuple;
-Console.WriteLine($"x2 is: {x}");
-Console.WriteLine($"y2 is: {y}");
+Console.WriteLine($"x2 is: {x2}");
+Console.WriteLine($"y2 is: {y2}");
 Console.WriteLine();
 
 Point p = new Point(7, 5);
