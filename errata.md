@@ -37,6 +37,10 @@ public string GetPetName()
 } 
 ``` 
 *** 
+On **page 86** Typo
+OrdinalIgnoreCare should be **OrdinalIgnoreCase**
+```
+***
 On **page 152** Missing word:  
 The note should read:  
 It is typically considered bad style to define public data within a class or *mutabl*e structure.  
